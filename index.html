@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="cv portfolio developer">
+    <title>Dmitrii Stukalov</title>
+    <link rel="icon" href="icons/home.svg">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+<header></header>
+<main>
+    <section>
+        <h1>Stukalov Dmitrii</h1>
+        <p>Student</p>
+    </section>
+    <img src="img/portrait.JPG" alt="my pretty face" id="image" onclick="changeImage()">
+    <div class="projects">
+        <h1>Projects</h1>
+        <ol>
+            <li>
+                <a href="https://github.com/Dmitrii-Stukalov/PeopleCounter" target="_blank">
+                    People Counter in video
+                </a>
+                <br>
+                <span>Technologies: C++, OpenCV</span>
+            </li>
+            <li>
+                <a href="https://github.com/Dmitrii-Stukalov/JiraTelegramBot" target="_blank">
+                    Telegram bot for Jira notifications.
+                </a>
+                <br>
+                <span>Technologies: Python, flask, ngrok, pyTelegramBotAPI</span>
+            </li>
+            <li>
+                <a href="https://github.com/Dmitrii-Stukalov/VoiceAndPhotoSaverBot" target="_blank">
+                    Telegram bot for saving voice messages and pictures.
+                </a>
+                <br>
+                <span>Technologies: Python, flask, ngrok, pyTelegramBotAPI, ffmpeg, face-recognition</span>
+            </li>
+        </ol>
+    </div>
+    <div class="education">
+        <h1>Education</h1>
+        <h2>Bachelor Information Systems and Technologies</h2>
+        <p>ITMO University</p>
+        <span>2018 - 2022, Saint Petersburg</span>
+    </div>
+    <div class="info">
+        <p>dmitrii.stukalov@list.ru</p>
+        <p>+7 915 701 14 39</p>
+        <p>github.com/Dmitrii-Stukalov</p>
+
+        <h1>Technologies</h1>
+        <p>С, С++, С#, Java, Python, Go, JavaScript</p>
+
+        <h1>Languages</h1>
+        <p>Russian (native)</p>
+        <p>English(A1)</p>
+
+        <h1>Social media</h1>
+        <p>vk.com/id351174499</p>
+        <p>t.me/dmitrii_stukalov</p>
+    </div>
+</main>
+<footer>
+    <div class="box">
+        <a class="button" href="#popup">Contacts</a>
+    </div>
+    <div id="popup" class="overlay">
+        <div class="popup">
+            <h2>Contacts</h2>
+            <p>dmitrii.stukalov@list.ru</p>
+            <p>+7 915 701 14 39</p>
+            <p>github.com/Dmitrii-Stukalov</p>
+            <a class="close" href="#">×</a>
+        </div>
+    </div>
+
+    <button class="chat-btn">Chat</button>
+
+    <div class="chat-popup">
+        <div class="chat-area">
+            <div class="income-msg">
+                <span class="msg">Hi, How can I help you?</span>
+                <button onclick="removeParent(this)">x</button>
+            </div>
+        </div>
+
+        <div class="input-area">
+            <input type="text">
+            <button class="submit">Send</button>
+        </div>
+    </div>
+</footer>
+<script src="index.js"></script>
+</body>
+</html>

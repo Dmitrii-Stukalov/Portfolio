@@ -1,0 +1,258 @@
+body {
+    font-family: Arial, serif;
+    background-color: #E5E5E5;
+    margin: 0;
+}
+
+header {
+    background-color: #101214;
+    height: 0.5rem;
+    padding: 0;
+}
+
+main {
+    margin-left: 3rem;
+}
+
+section {
+    margin-top: 4rem;
+    float: left;
+    width: 80%;
+}
+
+main h1 {
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-size: 20px;
+    color: #73808D;
+}
+
+section h1 {
+    font-size: 50px;
+    margin-top: 2.5rem;
+    margin-bottom: 0.5rem;
+    color: #000;
+}
+
+section p {
+    font-size: 37px;
+    margin-top: 0.5rem;
+}
+
+img {
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    object-position: 100% 0;
+    margin-right: 3rem;
+    margin-top: 2.5rem;
+    margin-bottom: 4rem;
+}
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    float: left;
+    width: 80%;
+}
+
+.projects ol {
+    padding-left: 2rem;
+}
+
+.projects ol li {
+    margin-top: 0;
+    font-size: 30px;
+    padding-bottom: 1rem;
+    line-height: 3rem;
+}
+
+.projects ol li span {
+    color: #828282;
+}
+
+.education {
+    float: left;
+}
+
+.education h2 {
+    font-size: 25px;
+    margin: 0;
+}
+
+.education p {
+    font-size: 25px;
+    margin: 1rem 0 1rem 0;
+}
+
+.info {
+    display: inline-flex;
+    flex-direction: column;
+    color: #73808D;
+}
+
+.info p {
+    margin-top: 0.2rem;
+    margin-bottom: 0.2rem;
+}
+
+.info h1 {
+    text-transform: none;
+    margin-top: 3rem;
+    margin-bottom: 0;
+}
+
+footer {
+    background-color: #101214;
+    height: 1rem;
+    padding: 0;
+    margin-top: 11rem;
+}
+
+/***********************************************************************/
+
+.box {
+    text-align: center;
+}
+
+.button {
+    font-size: 1rem;
+    color: #ffffff;
+    text-decoration: none;
+    transition: 0.3s ease-out;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.overlay:target {
+    visibility: visible;
+    opacity: 1;
+}
+
+.popup {
+    margin: 70px auto;
+    background: #fff;
+    border-radius: 5px;
+    width: 30%;
+    position: relative;
+    transition: all 5s ease-in-out;
+    padding: 30px 10px;
+}
+
+.popup h2 {
+    margin-top: 0;
+    font-family: Arial, sans-serif;
+}
+
+.popup .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #000000;
+}
+
+/***********************************************************************/
+
+button {
+    cursor: pointer;
+}
+
+.chat-btn {
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    opacity: 0.4;
+    transition: opacity 0.3s;
+}
+
+.chat-btn:hover {
+    opacity: 1;
+}
+
+.chat-popup {
+    display: none;
+    position: fixed;
+    bottom: 50px;
+    right: 120px;
+    height: 400px;
+    width: 300px;
+    background-color: white;
+    /*display: flex;*/
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0.5rem;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+}
+
+.show {
+    display: flex;
+}
+
+.chat-area {
+    height: 80%;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.income-msg {
+    display: flex;
+    align-items: center;
+}
+
+.income-msg .msg {
+    background-color: #E5E5E5;
+    padding: 0.5rem;
+    margin-left: 0.5rem;
+    border-radius: 25px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.4);
+}
+
+.input-area {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+input[type="text"] {
+    width: 100%;
+    border: 1px solid;
+    border-radius: 15px;
+}
+
+.submit {
+    border-radius: 20px;
+    padding: 0.25rem 0.5rem;
+    margin-left: 0.5rem;
+    background-color: #E5E5E5;
+}
+
+.out-msg {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.out-msg .my-msg {
+    background-color: black;
+    color: #E5E5E5;
+    padding: 0.5rem;
+    margin-left: 0.5rem;
+    border-radius: 25px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.4);
+}
